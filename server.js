@@ -25,19 +25,22 @@ function servePage(res, fileName, statusCode) {
 
 // Create server
 const server = http.createServer((req, res) => {
-    if (req.url === "/" || req.url === "/home") {
-        servePage(res, "home.html", 200);
+    if (req.url === "/" || req.url === "") {
+        servePage(res, "index.html", 200);
     }
     else if (req.url === "/about") {
         servePage(res, "about.html", 200);
     }
-    else if(req.url ==="/header.html"){
+    else if (req.url === "/home") {
+        servePage(res, "home.html", 200);
+    }
+    else if(req.url ==="/header"){
         servePage(res, "header.html",200)
     }
-    else if(req.url ==="/footer.html"){
+    else if(req.url ==="/footer"){
         servePage(res, "footer.html",200)
     }
-    else if(req.url ==="/menu.html"){
+    else if(req.url ==="/menu"){
         servePage(res, "menu.html",200)
     }
     else if (req.url === "/contact") {
@@ -58,3 +61,4 @@ else if (req.url.endsWith(".css")) {
 server.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
 });
+
