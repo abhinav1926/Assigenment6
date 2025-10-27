@@ -31,4 +31,31 @@
 
 
 5. Open your browser and visit:
+
     http://localhost:3000
+     To open about page specific, you can go 
+        http://localhost:3000/about
+
+
+        To open header page specific you can go
+        http://localhost:3000/header
+
+        
+        To open menu page specific, you can go
+        http://localhost:3000/menu
+
+        
+        To open contact page specific, you can go
+        http://localhost:3000/contact
+
+        
+        To open footer page specific ,you can go
+        http://localhost:3000/footer
+
+        
+        To open header page specific, you can go
+        http://localhost:3000/header
+
+        
+
+        
